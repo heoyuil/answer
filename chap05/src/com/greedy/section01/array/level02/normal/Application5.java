@@ -18,17 +18,21 @@ public class Application5 {
 		 * 치킨 이름을 입력하세요 : 달콤
 		 * 달콤치킨은 없는 메뉴입니다.
 		 * */
-		Scanner sc =new Scanner(System.in);
+		
 		String[] str = {"후라이드","양념","파닭","매콤","치즈","간장"};
+		String s;
+		boolean isTrue = false;
+		Scanner sc =new Scanner(System.in);
 		System.out.print("치킨 이름을 입력하세요 : ");
-		String s = sc.nextLine();
-		int cnt = 0;
+		s = sc.nextLine();
+		
 		for(int i = 0 ; i < str.length;i++) {
 			if(str[i].equals(s)) {
-				cnt++;
+				isTrue = true;
+				break;
 			}
 		}
-		if(cnt!=0) {
+		if(isTrue) {
 			System.out.println(s+"치킨 배달 가능");
 		}else {
 			System.out.println(s+"치킨은 없는 메뉴입니다");

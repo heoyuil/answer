@@ -14,8 +14,8 @@ public class Application1 {
 		 * 
 		 * 홀수
 		 * */
-		int n = 9;
-		System.out.println(n%2!=0?"홀수":"짝수");
+		int n = 9; // 정수
+		System.out.println(n%2!=0?"홀수":"짝수");// 들어온 정수를 2로 나누었을때 0이아니면 참 0이면 거짓
 	}
 
 }

@@ -17,20 +17,30 @@ public class Application1 {
 		 * -- 출력 예시 --
 		 * 입력하신 문자열 helloworld에서 찾으시는 문자 l은 3개 입니다.
 		 * */
+		String str;	// 입력받을 문자열
+		char[] carr;// 입력한 문자열을 하니씩 문자에 저장하기 위해 마든 문자배열
+		char ch;	// 검색할 문자
+		int n = 0;  // 검색한 문자가 몇개 있는지 저장할 변수
+		
 		Scanner sc =new Scanner(System.in);
 		System.out.print("문자열을 하나 입력하세요 : ");
-		String str = sc.nextLine();
-		char[] carr = new char[str.length()];
+		str = sc.nextLine();					
+		
+		carr = new char[str.length()];
+		
 		for(int i = 0 ; i <str.length();i++) {
 			carr[i] = str.charAt(i);
 		}
+		
 		System.out.print("검색할 문자를 입력하세요 : ");
-		char ch = sc.nextLine().charAt(0);
-		int n = 0;
+		ch = sc.nextLine().charAt(0);
+		
+		
 		for(int i = 0; i< str.length();i++) {
-			if(carr[i]==ch)
+			if(carr[i] == ch)
 				n++;
 		}
+		
 		System.out.println("입력하신 문자열 " + str + "에서 찾으시는 문자 "+ ch+"은 " + n+"개 입니다");
 	}
 

@@ -26,7 +26,8 @@ public class Application7 {
 		System.out.print("과일 이름을 입력하세요 : ");
 		String str = sc.nextLine();
 		int result = 0;
-		if(str.equals("사과")) {
+		
+		if(str.equals("사과")) {						
 			result = 1000;
 		}else if(str.equals("바나나")) {
 			result = 3000;

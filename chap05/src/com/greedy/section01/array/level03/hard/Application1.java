@@ -24,22 +24,30 @@ public class Application1 {
 		 * -- 출력 예시 --
 		 * 양수 혹은 홀수만 입력해야 합니다.
 		 */
+		int n;
+		int[] iarr;
+		int var = 0; //정수형 배열에 저장할 값
+		
 		Scanner sc =new Scanner(System.in);
 		System.out.print("홀수인 양의 정수를 입력하세요 : ");
-		int n = sc.nextInt();
+		n = sc.nextInt();
+		
 		if(n%2==0||n<=0) {
 			System.out.println("양수 혹은 홀수만 입력해야 합니다");
 			return;
 		}
-		int[] iarr = new int[n];
-		int var = 0;
+		
+		iarr = new int[n];
+		
 		for(int i = 0 ; i < n;i++) {
-			if(i>n/2) {
+			if(i>n/2) {						//입력받은 홀수의 중간 이후부터 1씩감소해서 저장하기 위한조건 
 				iarr[i] = --var;
 				continue;
 			}
+			
 			iarr[i] = ++var;
 		}
+		
 		for(int i = 0 ; i < n; i++) {
 			System.out.print(iarr[i]+" ");
 		}

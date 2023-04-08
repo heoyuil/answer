@@ -17,10 +17,12 @@ public class Application3 {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("정수를 입력하세요 : ");
 		int num = sc.nextInt();
+		
 		int sum = 0;
-		for(int i = 1;i<=num;i++)
-			if(i%2==0)
-				sum+=i;
+		for(int i = 1;i<=num;i++)									// 1부터 입력받은 정수까지 for문 계산
+			if(i%2==0)												// 짝수일때만 계산
+				sum+=i;												 
+		
 		System.out.println("1부터 " + num + "까지 짝수의 합 : " + sum);
 	}
 }

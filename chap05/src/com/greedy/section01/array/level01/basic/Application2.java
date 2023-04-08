@@ -26,10 +26,11 @@ public class Application2 {
 		 * 준비된 과일이 없습니다.
 		 * */
 		
-		String[] str = {"딸기","바나나","복숭아","키위","사과"};
+		String[] str = {"딸기" , "바나나" , "복숭아" , "키위" , "사과"};
 		Scanner sc = new Scanner(System.in);
 		System.out.print("0부터 4까지의 정수를 입력하세요 : ");
 		int n = sc.nextInt();
+		
 		if(n>4||n<0) {
 			System.out.println("준비된 과일이 없습니다");
 			return;

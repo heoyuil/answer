@@ -16,9 +16,9 @@ public class Application1 {
 		 * 양수다.
 		 * */
 		
-		Scanner sc = new Scanner(System.in);
-		System.out.print("정수를 하나 입력하세여 : ");
-		int n = sc.nextInt();
+		Scanner sc = new Scanner(System.in);			//스캐너 객체 생성
+		System.out.print("정수를 하나 입력하세여 : ");		
+		int n = sc.nextInt();							//정수를 입력바등ㅁ
 		
 		if(n>0)
 			System.out.println("양수다");

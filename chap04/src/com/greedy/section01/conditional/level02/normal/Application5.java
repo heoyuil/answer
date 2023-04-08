@@ -20,8 +20,10 @@ public class Application5 {
 		 * */
 		Scanner sc = new Scanner(System.in);
 		System.out.print("숫자를 입력하세요 : ");
-		int n = sc.nextInt();
-		String str= "";
+		int n = sc.nextInt();					
+		
+		String str= "";							
+		
 		switch(n) {
 		case 3: 
 		case 4: 
@@ -37,6 +39,7 @@ public class Application5 {
 		case 2: str = "겨울"; break; 
 		default: str = "잘못입력하혔습니다";
 		}
+		
 		System.out.println(str);
 	}
 }

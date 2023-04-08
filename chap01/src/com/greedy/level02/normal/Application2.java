@@ -11,9 +11,9 @@ public class Application2 {
 		 * 총점 : 201
 		 * 평균 : 67
 		 *  */
-		double a = 80.5;
-		double b = 50.6;
-		double c = 70.8;
+		double a = 80.5; // 국어
+		double b = 50.6; // 수학
+		double c = 70.8; // 영어
 		
 		int sum = (int) (a+b+c);
 		int avg = sum/3;

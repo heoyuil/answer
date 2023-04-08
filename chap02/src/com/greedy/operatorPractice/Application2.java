@@ -13,7 +13,7 @@ public class Application2 {
 		 * ------ 출력 결과 --------
 		 * 청소년
 		 * */
-		int n = 19;
+		int n = 19; // 정수
 		String result = n<=13?"어린이":n<=19?"청소년":"성인";
 		System.out.println(result);
 	}

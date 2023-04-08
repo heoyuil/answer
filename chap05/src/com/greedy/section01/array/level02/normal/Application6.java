@@ -14,18 +14,20 @@ public class Application6 {
 		 * 최소값 : 2
 		 * */
 		int[] iarr = new int[10];
-		int max = 0;
-		int min= 0;
+		int max = 1;				//max를 1로 하는 이유는 최대값을 찾기 위해 배열값가 비교를 해줘야 해서 범위에서 제일 낮은 수로 해줌
+		int min= 10;				//min를 10로 하는 이유는 최소값을 찾기 위해 배열값가 비교를 해줘야 해서 범위에서 제일 높은 수로 해줌
+		
 		for(int i = 0 ; i < iarr.length;i++) {
-			iarr[i] = (int)(Math.random()*10)+1;
+			iarr[i] = (int)(Math.random()*10)+1;	//1~10까지의 난수 생성후 배열에 넣어줌
 			System.out.print(iarr[i] + " ");
-			min = iarr[i];
 		}
 		System.out.println();
+		
 		for(int i = 0 ; i < iarr.length;i++) {
-			max = max>iarr[i]?max:iarr[i];
-			min = min<iarr[i]?min:iarr[i];
+			max = max>iarr[i]?max:iarr[i];			// max가 배열값보다 크면 max 작으면 배열값을 넣어줌
+			min = min<iarr[i]?min:iarr[i];			// min가 배열값보다 작으면 min 크면 배열값을 넣어줌
 		}
+		
 		System.out.println("최대값 : "+max);
 		System.out.println("최소값 : "+min);
 		

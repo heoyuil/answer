@@ -13,11 +13,14 @@ public class Application3 {
 		 * 양의 정수를 입력하세요 : 4
 		 * 1 2 3 4
 		 * */
+		int n;
+		int cnt = 1;		// 배열에 넣을 값
+		int[] arr;
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("양의 정수를 입력하세요 : ");
-		int n = sc.nextInt();
-		int cnt = 1;
-		int[] arr= new int[n];
+		n = sc.nextInt();
+		arr= new int[n];
 		for(int i = 0 ; i < arr.length;i++) {
 			arr[i] = cnt++;
 			System.out.print(arr[i]+ " ");

@@ -29,13 +29,17 @@ public class Application4 {
 		Scanner sc= new Scanner(System.in);
 		System.out.print("국어점수 : ");
 		int a = sc.nextInt();
+		
 		System.out.print("수학점수 : ");
 		int b = sc.nextInt();
+		
 		System.out.print("영어점수 : ");
 		int c = sc.nextInt();
-		int sum  = a+b+c;
-		double avg = (double)sum/3;
-		if(avg<60||a<40||b<40||c<40){
+		
+		int sum  = a+b+c; 							// 합계 계산
+		double avg = (double)sum / 3;				// 합계를 double 형변환후 / 3 해서 평균계산
+		
+		if(avg<60||a<40 || b<40 || c<40){			// 평균이 60아래거나 각 과목이 40미만이면 불합격을 출력
 			System.out.println("불합격입니다");
 		}else {
 			System.out.println("국어점수 : " + a);

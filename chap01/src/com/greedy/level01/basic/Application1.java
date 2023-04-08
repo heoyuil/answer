@@ -15,8 +15,8 @@ public static void main(String[] args) {
 		 * 나누기한 나머지 : 20
 		 * */
 		
-		int a = 20;
-		int b = 30;
+		int a = 20; // 변수 1
+		int b = 30; // 변수 2
 		System.out.println("a + b = " + (a+b));
 		System.out.println("a - b = " + (a-b));
 		System.out.println("a * b = " + (a*b));

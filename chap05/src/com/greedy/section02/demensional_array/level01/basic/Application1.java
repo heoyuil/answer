@@ -17,6 +17,7 @@ public class Application1 {
 		 * */
 		int n = 0;
 		int[][] iarr = new int[3][4];
+		
 		for(int i = 0; i <iarr.length;i++) {
 			for(int j = 0; j<iarr[i].length;j++) {
 				iarr[i][j] =++n;

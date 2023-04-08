@@ -23,8 +23,9 @@ public class Application1 {
 		Scanner sc= new Scanner(System.in);
 		System.out.print(" 문자열을 입력하세요 : ");
 		String str = sc.nextLine();
-		for(int i = 0; i < str.length();i++)
-			System.out.println(i + " : "+str.charAt(i));
+		
+		for(int i = 0; i < str.length();i++)						// 문자열 길이만큼 for문
+			System.out.println(i + " : "+str.charAt(i));			// 문자열에서 첫인덱스에서 문자 하나씩 출력
 
 	}
 }

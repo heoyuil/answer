@@ -15,13 +15,18 @@ public class Application2 {
 		 * -- 출력 예시 --
 		 * 990101-1******
 		 */
+		String str;		// 입력받은 문자열 저장할 변수
+		char[] carr;	// 문자열을 문자 배열로 저장할 배열
+		
 		Scanner sc =new Scanner(System.in);
 		System.out.print("주민등록번호를 입력하세요 : ");
-		String str = sc.nextLine();
-		char[] carr = new char[str.length()];
+		str = sc.nextLine();
+		
+		carr = new char[str.length()];	//문자열 길이만큼 할당
+		
 		for(int i = 0 ; i < str.length();i++) {
 			carr[i] = str.charAt(i);
-			if(i>7) {
+			if(i>7) {					//인덱스 8반째부터는 *로 표시
 				System.out.print("*");
 				continue;
 			}

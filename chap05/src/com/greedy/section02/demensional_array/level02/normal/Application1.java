@@ -25,23 +25,26 @@ public class Application1 {
          * W H J X 
          * W S S J 
 		 * */
-		int a,b;
+		int a,b;	//가로 세로 저장할 변수
+		char[][] carr; //가로 세로길이를 이용할 2차원 배열
 		Scanner sc = new Scanner(System.in);
-		do {
-			
+		
+		do {		//1~10까지 가로 세로 받을 반복문
 		System.out.print("가로 행의 수를 입력하세요 : ");
 		a = sc.nextInt();
+		
 		System.out.print("세로 열의 수를 입력하세요 : ");
 		b = sc.nextInt();
+		
 		if ((a<1||a>10)||(b<1||b>10)) System.out.println("반드시 1~10까지의 정수를 입력해야 합니다. 다시 입력하세요.");
 		}while((a<1||a>10)||(b<1||b>10));
 		
-		char[][] carr = new char[a][b];
+		carr = new char[a][b];	//할당
 		
-		for(int i = 0 ; i < carr.length;i++) {
+		for(int i = 0 ; i < carr.length;i++) { //알파벳을 저장
 			for(int j = 0; j<carr[i].length;j++) {
-				carr[i][j] = (char)((int)(Math.random()*26)+65);
-				System.out.print(carr[i][j]+" ");
+				carr[i][j] = (char)((int)(Math.random()*26)+65); //알파벳만들기
+				System.out.print(carr[i][j]+" ");	//저장후 바로 출력
 			}
 			System.out.println();
 		}

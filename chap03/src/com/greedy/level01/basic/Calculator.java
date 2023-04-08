@@ -21,10 +21,26 @@ public class Calculator {
 	public void checkMethod() {
 		System.out.println("메소드 호출 확인");
 	}
+	
+	/**<pre>
+	 * 매개변수로 받은 정수 2개를 더한후 결과값을 문자열로 반환하는 메소드
+	 * </pre>
+	 * @param a
+	 * @param b
+	 * @return
+	 */
 	public String sumTwoNumber(int a,int b) {
 		int sum = a + b;
 		return ""+ sum;
 	}
+	
+	/**<pre>
+	 * 매개변수로 받은 정수 2개를 곱한후 결과값을 문자열로 반환하는 메소드
+	 * </pre>
+	 * @param a
+	 * @param b
+	 * @return
+	 */
 	public String multiTowNumber(int a,int b) {
 		int mult = a * b;
 		return "" + mult;

@@ -11,12 +11,14 @@ public class Application1 {
 		 * */
 		Scanner sc =new Scanner(System.in);
 		int[] iarr = new int[10];
-		for(int i = 0 ; i <iarr.length;i++) {
-			System.out.print(i+1+"번째 숫자를 입력하세요 : ");
+		
+		for(int i = 0 ; i <iarr.length;i++) {						//정수형 배열에 차례대로 입력
+			System.out.print(i + 1 + "번째 숫자를 입력하세요 : ");
 			iarr[i] = sc.nextInt();
 		}
-		for(int i = 0 ; i < 10;i++) {
-			System.out.print(iarr[i]+ " ");
+		
+		for(int i = 0 ; i < 10;i++) {								//정수형 배열을 하나씩 출력
+			System.out.print(iarr[i] + " ");
 		}
 	}
 

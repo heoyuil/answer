@@ -18,10 +18,11 @@ public class Application3 {
 		Scanner sc =new Scanner(System.in);
 		System.out.print("정수를 입력하세요 : ");
 		int num = sc.nextInt();
+		
 		for(int i = 1; i<=num;i++) {
-			if(i%2==0)
+			if(i%2==0)							// 짝수일때 박을 출력
 				System.out.print("박");
-			else if(i%2!=0)
+			else if(i%2!=0)						// 홀수일때 수를 출력
 				System.out.print("수");
 		}
 

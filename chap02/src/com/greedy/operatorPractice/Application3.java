@@ -13,7 +13,8 @@ public class Application3 {
 		 * ---- 출력 결과 ---
 		 * 남자입니다.
 		 * */
-		char c = 'M';
+		
+		char c = 'M'; // 문자형 변수
 		System.out.println(c=='F'?"여성입니다":"남자입니다");
 	}
 

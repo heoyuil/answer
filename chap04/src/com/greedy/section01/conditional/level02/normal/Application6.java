@@ -21,19 +21,23 @@ public class Application6 {
 		Scanner sc =new Scanner(System.in);
 		System.out.print("첫번째 정수 : ");
 		int a = sc.nextInt();
+		
 		System.out.print("두번째 정수 : ");
 		int b = sc.nextInt();
+		
+		sc.nextLine();									//버퍼 초기화
 		System.out.print("연산기호를 입력하세요 : ");
-		sc.nextLine();
-		char c = sc.nextLine().charAt(0);
-		int result= 0;
+		char c = sc.nextLine().charAt(0);				//문자형을 받을려면 nextLine으로 받은 후 charAt로 원하느 인덱스에 있는 문자를 받음
+
+		int result = 0;
+		
 		switch(c) {
 		case '+': result = a+b;break;
 		case '-': result = a-b;break;
 		case '*': result = a*b;break;
 		case '/': result = a/b;break;
 		case '%': result = a%b;break;
-		default: System.out.println("입력하신 연산은 없습니다. 프로그램을 종료합니다");return;
+		default: System.out.println("입력하신 연산은 없습니다. 프로그램을 종료합니다");return; //입력한 연산이 없을 시 종료
 		}
 		System.out.println(a+" "+c+" "+b+" = " +result);
 	}

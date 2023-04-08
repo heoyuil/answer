@@ -34,9 +34,10 @@ public class Application2 {
 		 * 김유신 이사부
 		 */
 		String[] sarr = {"홍길동","이순신","유관순","윤봉길","장영실","임꺽정","장보고","이태백","김정희","대조영","김유신","이사부"};
+		int val = 0; // sarr에 첫 인덱스주소 설정할 거
 		String[][] sarr1 = new String[3][2];
 		String[][] sarr2 = new String[3][2];
-		int val = 0;
+		
 		System.out.println("==1분단==");
 		for(int i = 0 ; i<sarr1.length; i++) {
 			for(int j = 0; j<sarr1[i].length;j++) {
@@ -45,6 +46,8 @@ public class Application2 {
 			}
 			System.out.println();
 		}
+		System.out.println();
+		
 		System.out.println("==2분단==");
 		for(int i = 0 ; i<sarr2.length; i++) {
 			for(int j = 0; j<sarr2[i].length;j++) {
@@ -53,5 +56,5 @@ public class Application2 {
 			}
 			System.out.println();
 		}
-		}
+	}
 }

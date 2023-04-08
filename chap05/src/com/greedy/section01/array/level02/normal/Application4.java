@@ -21,16 +21,21 @@ public class Application4 {
 		 * 총합 : 6
 		 * 
 		 * */
+		int n;
+		int[] iarr;
+		int sum = 0;	// 총합
 		Scanner sc = new Scanner(System.in);
 		System.out.print("정수를 입력하세요 : ");
-		int n = sc.nextInt();
-		int[] iarr= new int[n];
-		int sum = 0;
+		n = sc.nextInt();
+		
+		iarr= new int[n];
+		
 		for(int i = 0; i < iarr.length;i++) {
 			System.out.print("배열 "+i+"번째 인덱스에 넣을 값 : ");
 			iarr[i] = sc.nextInt();
 			sum += iarr[i];
 		}
+		
 		for(int i : iarr) {
 			System.out.print(i + " ");
 		}

@@ -16,16 +16,21 @@ public class Application2 {
 		 * 
 		 * 계산 예시) BMI = 67 / (1.7 * 1.7)
 		 * */
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("신장 입력 : ");
 		double h = sc.nextDouble();
+		if(h>10)								// 신장을 cm로 입력시 m로 변환
 		h = h*0.01;
+		
 		System.out.print("체중 입력 : ");
 		double w = sc.nextDouble();
-		double bmi = w/(h*h);
-		if(bmi<20)
+		
+		double bmi = w / (h * h);				// bmi 계산
+		
+		if(bmi < 20)
 			System.out.println("당신은 저체중입니다");
-		else if(bmi<25)
+		else if(bmi < 25)
 			System.out.println("당신은 정상체중입니다");
 		else if(bmi < 30)
 			System.out.println("당신은 과체중입니다");
