@@ -1,8 +1,13 @@
 package com.ohgiraffers.hw1.controller;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
+import com.ohgiraffers.hw1.comparator.AscBookNo;
+import com.ohgiraffers.hw1.comparator.AscBookTitle;
+import com.ohgiraffers.hw1.comparator.DescBookNo;
+import com.ohgiraffers.hw1.comparator.DescBookTitle;
 import com.ohgiraffers.hw1.model.dto.BookDTO;
 
 public class BookManager {
@@ -38,16 +43,21 @@ public class BookManager {
 		}
 	}
 	
-//	public List<BookDTO> sortedBookList(int type){
-//		switch(type) {
-//		case 1:
-//		case 2:
-//		case 3:
-//		case 4:
-//		}
-//	}
-//	
-//	public void printBookList(List<BookDTO> printList) {}
-//	
-//	
+	public List<BookDTO> sortedBookList(int type){
+		switch(type) {
+		case 1:booklist.sort(new AscBookNo());break;
+		case 2:booklist.sort(new DescBookNo());break;
+		case 3:booklist.sort(new AscBookTitle());break;
+		case 4:booklist.sort(new DescBookTitle());break;
+		}
+		return booklist;
+	}
+	
+	public void printBookList(List<BookDTO> printList) {
+		for(BookDTO book : printList) {
+			System.out.println(book);
+		}
+	}
+	
+	
 }

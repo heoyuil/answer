@@ -18,7 +18,7 @@ public class BookMenu {
 		while(true) {
 		System.out.println("***도서 관리 프로그램***");
 		System.out.println("1. 새 도서 추가");
-//		System.out.println("2. 도서정보 정렬 후 출력");
+		System.out.println("2. 도서정보 정렬 후 출력");
 		System.out.println("3. 도서 삭제");
 		System.out.println("4. 도서 검색출력");
 		System.out.println("5. 전체 출력");
@@ -29,7 +29,7 @@ public class BookMenu {
 		
 		switch(n) {
 			case 1 : bm.addBook(inputBook());break;
-//			case 2 : bm.printBookList(selectSortedBook());break;
+			case 2 : bm.printBookList(selectSortedBook());break;
 			case 3 : bm.deleteBook(inputBookNo()); break;
 			case 4 : bm.searchBook(inputBookTitle()); break;
 			case 5 : bm.displayAll(); break;
@@ -62,18 +62,18 @@ public class BookMenu {
 		return title;
 	}
 	
-//	public List<BookDTO> selectSortedBook(){
-//		System.out.println("도서 정렬 방식을 선택하세요");
-//		System.out.println("1. 도서번호(ISBN)으로 오름차순 정렬");
-//		System.out.println("2. 도서번호(ISBN)으로 내림차순 정렬");
-//		System.out.println("3. 책 제목으로 오름차순 정렬");
-//		System.out.println("4. 책 제목으로 내림차순 정렬");
-//		System.out.print("번호 : ");
-//		int type = sc.nextInt();
-//		return bm.sortedBookList(type);
-//		
-//	}
-//	
+	public List<BookDTO> selectSortedBook(){
+		System.out.println("도서 정렬 방식을 선택하세요");
+		System.out.println("1. 도서번호(ISBN)으로 오름차순 정렬");
+		System.out.println("2. 도서번호(ISBN)으로 내림차순 정렬");
+		System.out.println("3. 책 제목으로 오름차순 정렬");
+		System.out.println("4. 책 제목으로 내림차순 정렬");
+		System.out.print("번호 : ");
+		int type = sc.nextInt();
+		return bm.sortedBookList(type);
+		
+	}
+	
 	
 	
 }
